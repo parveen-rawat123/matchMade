@@ -24,10 +24,10 @@ async function main() {
 
 
   
-app.get("/main", (req,res)=>{
+// app.get("/main", (req,res)=>{
 
-    res.render("main.ejs")
-})
+//     res.render("main.ejs")
+// })
 
 
 app.get('/', (req, res) => {
