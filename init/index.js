@@ -1,5 +1,5 @@
 const mongoose = require("mongoose")
-const  initdata = require(".init/data.js");
+const  initdata = require("./data.js");
 const listing = require("../models/schema.js")
 const MONGO_URL = "mongodb://127.0.0.1:27017/matchmade";
 

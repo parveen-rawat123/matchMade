@@ -1,57 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>matchmade</title>
-</head>
-
-<body>
+<% layout("../layout/boilerplate") %>
     <div>
-        <ul>
-            <% for (const iterator of data) { %>
-                <li>
-                    <p> Name: <%= name %>
-                    </p>
-                </li>
-                <li> Gender: <p>
-                        <%= %>
-                    </p>
-                </li>
-                <li> Date of brith:<p>
-                        <%= %>
-                    </p>
-                </li>
-                <li> Country: <p>
-                        <%= %>
-                    </p>
-                </li>
-                <li> <img src="<%=  %>" alt=""> </li>
-                <li> Education" <p>
-                        <%= %>
-                    </p>
-                </li>
-                <li> Profession: <p>
-                        <%= %>
-                    </p>
-                </li>
-                <li> Religion: <p>
-                        <%= %>
-                    </p>
-                </li>
-                <li> Height: <p>
-                        <%= %>
-                    </p>
-                </li>
-                <li> Salary: <p>
-                        <%= %>
-                    </p>
-                </li>
+            <% for (const  user of alluser) { %>
+                <a href="/main/<%=user._id %>">    
+                    <img src="<%=user.profilePicture  %>" alt="profile image" style="height: 20rem"> 
+                    <p> Name: <%= user.username%></p>                
+                    <p> country :<%= user.location %> </p>
+                </a>
+                    <br><br>
                 <% } %>
-        </ul>
-    </div>
-    <h2> data was loading..................</h2>
-</body>
+            </div>
 
-</html>

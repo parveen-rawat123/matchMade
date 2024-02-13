@@ -1,0 +1,27 @@
+    <% layout("/layout/boilerplate")%>
+    
+    <h2> user list </h2>    
+    <div>
+        <img src="<%=finduser.profilePicture  %>" alt="profile image" style="height: 20rem; ">
+    </div>
+    <div>
+        <b> Name: <%=finduser.username%></b>
+        <p> email : <%=finduser.email%>
+        </p>
+        <p>Gender:<%= finduser.gender%>
+        </p>
+        <p> Date of Birth: <%= finduser.dateOfBirth.getFullYear() %>
+        </p>
+        <p> country :<%= finduser.location %>
+        </p>
+        <p>Educationm : <%=finduser.education %>
+        </p>
+        <p>Profession:<%=finduser.profession %>
+        </p>
+        <p>Religion: <%= finduser.religion %>
+        </p>
+        <p> Height:<%=finduser.height %>
+        </p>
+        <p>Salary:<%=finduser.salary %>
+        </p>
+    </div>
