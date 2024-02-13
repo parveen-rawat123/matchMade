@@ -33,8 +33,8 @@ let alluser = await listing.find({})
 // profile route 
 app.get("/main/:id", async (req,res)=>{
   let {id} = req.params;
-  let finduser =  await user.findById(id);
-  req.render("profilelist.ejs",{finduser});
+  let finduser =  await listing.findById(id);
+  res.render("profilelist.ejs",{finduser});
 });
 
 
